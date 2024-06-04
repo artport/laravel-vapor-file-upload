@@ -15,7 +15,7 @@ export default class Vapor
 
                 request.setRequestHeader('Content-Type', 'application/json');
                 request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-                request.setRequestHeader('X-CSRF-TOKEN', System.Server.csrf());
+                request.setRequestHeader('X-CSRF-TOKEN', document.querySelector('meta[name="csrf-token"]').getAttribute('content'));
 
                 request.send(JSON.stringify({
                     bucket       : options.bucket || '',
@@ -51,7 +51,7 @@ export default class Vapor
                 }
 
                 request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-                request.setRequestHeader('X-CSRF-TOKEN', System.Server.csrf());
+                request.setRequestHeader('X-CSRF-TOKEN', document.querySelector('meta[name="csrf-token"]').getAttribute('content'));
                 request.setRequestHeader('Content-Type', options.contentType || file.type);
 
                 request.send(file);
