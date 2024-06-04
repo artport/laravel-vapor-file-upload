@@ -1,4 +1,4 @@
-export default class Vapor
+class Vapor
 {
     /**
      * Retrieve a signed storage link to upload with.
@@ -77,3 +77,5 @@ export default class Vapor
         return response;
     }
 }
+
+window.Vapor = Vapor;

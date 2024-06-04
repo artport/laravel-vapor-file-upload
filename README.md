@@ -15,5 +15,5 @@ Simply add the package to `package.json` like so:
 Then import the script into your application like so:
 
 ```js
-import Vapor from '../../node_modules/@artport/laravel-vapor-file-upload/dist/laravel-vapor-file-upload.min.esm.js';
+import '../../node_modules/@artport/laravel-vapor-file-upload/dist/laravel-vapor-file-upload.min.esm.js';
 ```
