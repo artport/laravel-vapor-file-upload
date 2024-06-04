@@ -8,12 +8,12 @@ Simply add the package to `package.json` like so:
 
 ```bash
 "devDependencies": {
-    "alpine-fetch": "github:artport/laravel-vapor-file-upload"
+    "@artport/laravel-vapor-file-upload": "github:artport/laravel-vapor-file-upload"
 },
 ```
 
 Then import the script into your application like so:
 
 ```js
-import Vapor from '../../node_modules/laravel-vapor-file-upload/dist/laravel-vapor-file-upload.min.esm.js';
+import Vapor from '../../node_modules/@artport/laravel-vapor-file-upload/dist/laravel-vapor-file-upload.min.esm.js';
 ```
