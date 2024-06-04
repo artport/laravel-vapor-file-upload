@@ -1,0 +1,25 @@
+{
+    "name": "@artport/laravel-vapor-file-upload",
+    "version": "1.0.0",
+    "description": "Lightweight implementation of Laravel Vapor's S3 file upload / streaming package.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/artport/laravel-vapor-file-upload.git"
+    },
+    "keywords": [
+        "laravel",
+        "vapor",
+        "s3"
+    ],
+    "scripts": {
+        "build": "microbundle"
+    },
+    "main": "dist/laravel-vapor-file-upload.min.js",
+    "source": "src/laravel-vapor-file-upload.js",
+    "author": "ArtPort",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/preset-env": "^7.16.4",
+        "microbundle": "^0.14.2"
+    }
+}
